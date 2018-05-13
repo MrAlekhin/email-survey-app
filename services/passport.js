@@ -10,9 +10,7 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser(async (id, done) => {
-  try {
-    done(null, await User.findById(id));
-  } catch (e) {}
+  done(null, await User.findById(id));
 });
 
 passport.use(
