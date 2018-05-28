@@ -30,7 +30,6 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <nav>
         <div className="nav-wrapper">
@@ -40,9 +39,7 @@ class Header extends Component {
           >
             Emaily
           </Link>
-          <ul className="right">
-            <li>{this.renderContent()}</li>
-          </ul>
+          <ul className="right">{this.renderContent()}</ul>
         </div>
       </nav>
     );
